@@ -2,31 +2,31 @@ const meals = {
   breakfast: {
     drink: "Water",
     items: [
-      { name: "បាយ ស្រូប", price: 2, img: "Morning/baysrob.jpg" },
-      { name: "បបរ គ្រឿង", price: 2, img: "Morning/bb_krerng.jpg" },
-      { name: "នំ បញ្ចុកស្រុះ", price: 3, img: "Morning/nom_banhjok.jpg" },
-      { name: "មី ស៊ុប", price: 2.5, img: "Morning/mi_sob.jpg" },
-      { name: "បាយ សាច់ជ្រូក", price: 2, img: "Morning/bay_sach_jruk.jpg" }
+      { name: "បាយ ស្រូប", price: 2, img: "baysrob.jpg" },
+      { name: "បបរ គ្រឿង", price: 2, img: "bb_krerng.jpg" },
+      { name: "នំ បញ្ចុកស្រុះ", price: 3, img: "nom_banhjok.jpg" },
+      { name: "មី ស៊ុប", price: 2.5, img: "mi_sob.jpg" },
+      { name: "បាយ សាច់ជ្រូក", price: 2, img: "bay_sach_jruk.jpg" }
     ]
   },
   lunch: {
     drink: "Water",
     items: [
-      { name: "បាយ ឆា", price: 3, img: "Afternoon/baycha.jpg" },
-      { name: "គុយ ទាវ", price: 3, img: "Afternoon/Koyteav.jpg" },
-      { name: "បាយ + ម្ហូប", price: 2, img: "Afternoon/12.jpg" },
-      { name: "សម្ល ម្ជូរ", price: 3.5, img: "Afternoon/somlor_machou.jpg" },
-      { name: "បាយ សាច់មាន់", price: 3, img: "Afternoon/bay_sach_moan.jpg" }
+      { name: "បាយ ឆា", price: 3, img: "baycha.jpg" },
+      { name: "គុយ ទាវ", price: 3, img: "Koyteav.jpg" },
+      { name: "បាយ + ម្ហូប", price: 2, img: "12.jpg" },
+      { name: "សម្ល ម្ជូរ", price: 3.5, img: "somlor_machou.jpg" },
+      { name: "បាយ សាច់មាន់", price: 3, img: "bay_sach_moan.jpg" }
     ]
   },
   dinner: {
     drink: "Beer",
     items: [
-      { name: "ស៊ុប គោ", price: 5, img: "Evening/Sobkor.jpg" },
-      { name: "គោ ដុត", price: 5, img: "Evening/kordot.jpg" },
-      { name: "មាន់ អាំងអំបិលម្ទេស", price: 5, img: "Evening/chiken.jpg" },
-      { name: "មឹក អាំង", price: 6, img: "Evening/muk_ang.jpg" },
-      { name: "ស៊ុប សាច់ជ្រូក", price: 5, img: "Evening/soup_sach_jruk.jpg" }
+      { name: "ស៊ុប គោ", price: 5, img: "Sobkor.jpg" },
+      { name: "គោ ដុត", price: 5, img: "kordot.jpg" },
+      { name: "មាន់ អាំងអំបិលម្ទេស", price: 5, img: "chiken.jpg" },
+      { name: "មឹក អាំង", price: 6, img: "muk_ang.jpg" },
+      { name: "ស៊ុប សាច់ជ្រូក", price: 5, img: "soup_sach_jruk.jpg" }
     ]
   }
 };
@@ -310,20 +310,3 @@ function payWithQR() {
   showToast(`ការទូទាត់ ${currencySymbol}${totalDisplay} បានបញ្ចប់តាម QR code!`, 'success');
 }
 
-// function showToast(message, type) {
-//   const toast = document.createElement('div');
-//   toast.className = `toast align-items-center text-white bg-${type} border-0 animate-toast`;
-//   toast.role = 'alert';
-//   toast.ariaLive = 'assertive';
-//   toast.ariaAtomic = 'true';
-//   toast.innerHTML = `
-//     <div class="d-flex">
-//       <div class="toast-body">${message}</div>
-//       <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-//     </div>
-//   `;
-//   DOM.toastContainer.appendChild(toast);
-//   const bsToast = new bootstrap.Toast(toast);
-//   bsToast.show();
-//   setTimeout(() => toast.remove(), 3000);
-// }
