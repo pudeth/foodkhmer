@@ -1,0 +1,303 @@
+body {
+  font-family: 'Noto Serif Khmer', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url(background.jpg) no-repeat center/cover;
+  background-blend-mode: overlay;
+  min-height: 100vh;
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(90deg, #1a7b2a 0%, #6bb104 23%, #1e8a2c 100%);
+  color: #ffffff;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-right: solid 10px rgb(255, 255, 255);
+  font-family: Khmer OS Muol;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-brand span {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 4s linear 1s normal both,
+             animated-cursor 600ms linear infinite;
+}
+
+#headerLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  border: 2px solid #1a7b2a;
+  object-fit: cover;
+}
+
+@keyframes animated-text {
+  from { width: 0; }
+  to { width: 500px; }
+}
+
+@keyframes animated-cursor {
+  from { border-right-color: rgb(255, 255, 255); }
+  to { border-right-color: transparent; }
+}
+
+.nav-link.menu-btn {
+  font-family: 'Noto Serif Khmer', sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #1a7b2a;
+  border-radius: 8px;
+  margin-left: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-link.menu-btn:hover,
+.nav-link.menu-btn:focus {
+  background: #0a5c1a;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.nav-link.menu-btn.about:hover,
+.nav-link.menu-btn.about:focus {
+  background: #d9480f;
+}
+
+.addwelcome {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.main-content {
+  padding: 20px 0;
+}
+
+.content {
+  background: linear-gradient(145deg, #ffffffcc, #e3e3e3cc), url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  border: 3px solid #1a7b2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 145, 27, 0.3);
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 145, 27, 0.4);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #1a7b2a;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-family: 'Noto Serif Khmer', sans-serif;
+  font-size: 1.5rem;
+  color: #1a7b2a;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #444;
+}
+
+.quantity-input {
+  max-width: 100px;
+}
+
+.nav-tabs .nav-link {
+  font-family: 'Noto Serif Khmer', sans-serif;
+  color: #1a7b2a;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+  color: #d9480f;
+  border-bottom: 2px solid #d9480f;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #0a5c1a;
+  border-bottom: 2px solid #0a5c1a;
+}
+
+#searchInput {
+  font-family: 'Noto Serif Khmer', sans-serif;
+  border-radius: 8px;
+  border: 2px solid #1a7b2a;
+  transition: border-color 0.3s ease;
+}
+
+.aside-1 {
+  background: linear-gradient(145deg, #ffffffcc, #e3e3e3cc), url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#cart-list .d-flex {
+  margin: 5px 0;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#total {
+  color: #d9480f;
+  font-weight: bold;
+}
+
+#qrCode {
+  border: 2px solid #1a7b2a;
+  border-radius: 8px;
+  max-width: 150px;
+}
+
+#qrCaption {
+  font-size: 0.9rem;
+  color: #1a7b2a;
+}
+
+#qrTotal {
+  font-weight: bold;
+  color: #d9480f;
+}
+
+.showAbout .card {
+  background: #ffffffcc;
+}
+
+.showAbout .list-group-item {
+  background: transparent;
+  border: none;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.id-card-container {
+  text-align: center;
+}
+
+#aboutIdCard {
+  max-width: 150px;
+  border: 2px solid #1a7b2a;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.id-caption {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 5px;
+}
+      
+.hideCart {
+  display: none;
+}
+
+.footer {
+  background: linear-gradient(90deg, #1a7b2a 0%, #6bb104 23%, #1e8a2c 100%);
+  color: #e6f4d8;
+}
+
+.footer a {
+  color: #b8e994;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.1rem;
+  color: #ff0000;
+}
+
+.social-link:hover {
+  color: #fff;
+}
+
+.social-link i {
+  font-size: 1.5rem;
+}
+
+#footerIdCard {
+  max-width: 50px;
+  border: 2px solid #1a7b2a;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin: 15px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutIdCard {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #footerIdCard {
+    max-width: 150px;
+  }
+}
+
+.toast-container {
+  z-index: 1050;
+}
